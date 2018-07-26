@@ -27,7 +27,7 @@
 
     function updateProgress(progress) {
         let $progress = document.querySelector('#qor-worker--progress');
-        if ($progress) {
+        if ($progress && document.querySelector('#qor-worker--progress').MaterialProgress) {
             document.querySelector('#qor-worker--progress').MaterialProgress.setProgress(progress);
         }
     }
